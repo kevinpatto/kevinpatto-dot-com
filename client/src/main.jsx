@@ -1,10 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-import './index.css'
-
-import App from './App.jsx'
+import App from './App.jsx';
 import HomePage from './pages/HomePage';
 import ErrorPage from './pages/ErrorPage';
 
@@ -24,4 +23,4 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<RouterProvider router={router} />
-)
+);
